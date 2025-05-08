@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Density Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <h2>Anahtar Kelime Yoğunluğu Analizi</h2>
+    
+    <button id="analyze"><i class="fas fa-search"></i> Sayfayı Analiz Et</button>
+    
+    <div class="alert" id="success-alert">
+        İşlem başarıyla tamamlandı!
+    </div>
+    
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+        <p>Analiz ediliyor...</p>
+    </div>
+    
+    <h3>1-Kelimelik Anahtar Kelimeler</h3>
+    <div class="table-container">
+        <table id="single-word-table">
+            <tr>
+                <th>Kelime</th>
+                <th>% Yoğunluk</th>
+                <th>Kullanım Yeri</th>
+            </tr>
+            <tr class="empty-state">
+                <td colspan="3">Henüz analiz yapılmadı</td>
+            </tr>
+        </table>
+    </div>
+    
+    <h3>2-Kelimelik Anahtar Kelimeler</h3>
+    <div class="table-container">
+        <table id="two-word-table">
+            <tr>
+                <th>Kelime Grubu</th>
+                <th>% Yoğunluk</th>
+                <th>Kullanım Yeri</th>
+            </tr>
+            <tr class="empty-state">
+                <td colspan="3">Henüz analiz yapılmadı</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>3-Kelimelik Anahtar Kelimeler</h3>
+    <div class="table-container">
+        <table id="three-word-table">
+            <tr>
+                <th>Kelime Grubu</th>
+                <th>% Yoğunluk</th>
+                <th>Kullanım Yeri</th>
+            </tr>
+            <tr class="empty-state">
+                <td colspan="3">Henüz analiz yapılmadı</td>
+            </tr>
+        </table>
+    </div>
+
+    <button id="copy"><i class="fas fa-copy"></i> Anahtar Kelimeleri Kopyala</button>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
